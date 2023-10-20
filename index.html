@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
         <nav class="navbar">
-            <a href="#" class="active" style="--i:1">Home</a>
-            <a href="#" style="--i:2">About</a>
-            <a href="#" style="--i:3">Skills</a>
-            <a href="#" style="--i:4">Portfolio</a>
-            <a href="#" style="--i:5">Contact</a>
-
+            <div class="top">
+                <a href="#" class="active" style="--i:1">Home</a>
+                <a href="#" style="--i:2">About</a>
+                <a href="#" style="--i:3">Skills</a>
+                <a href="#" style="--i:4">Portfolio</a>
+                <a href="#" style="--i:5">Contact</a>
+            </div>
+            <div class="bottom-icons">
+                <a href=""><i class="fa-solid fa-house "></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-chart-simple"></i></a>
+                <a href=""><i class="fa-solid fa-layer-group"></i></a>
+                <a href=""><i class="fa-solid fa-message"></i></a>
+            </div>
         </nav>
     </header>
     <!-- ............................Hero Section............................. -->
@@ -26,39 +40,189 @@
             <h3 class="part-1">Hello, It's Me</h3>
             <h1>Muzammil</h1>
             <h3 class="part-2">And I'm a <span id="changing-text">.Net Developer</span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum doloribus dignissimos harum inventore placeat corrupti molestiae non minus rerum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum laborum doloribus dignissimos harum
+                inventore placeat corrupti molestiae non minus rerum.</p>
             <!-- ...................Social Media Icons...................... -->
-            
-            <a href=""><i class="fa-brands fa-facebook-f"  style="--i:7"></i></a>
+
+            <a href=""><i class="fa-brands fa-facebook-f" style="--i:7"></i></a>
             <a href=""><i class="fa-brands fa-twitter" style="--i:8"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"   style="--i:9"></i></a>
+            <a href=""><i class="fa-brands fa-instagram" style="--i:9"></i></a>
             <a href=""><i class="fa-brands fa-linkedin-in" style="--i:10"></i></a> <br>
             <button class="btn">Download CV</button>
         </div>
         <div class="hero-img">
-            <img src="/img/arjun-das.jpg" alt="My Pic">
+            <img src="/img/arjun-das.jpg" class="tilt" alt="My Pic">
         </div>
     </div>
     <!-- =================Page-2================== -->
 
-    <div class="about-content">
-        <div class="left-about">
-            <img src="/img/arjun-das.jpg" alt="">
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/img/arjun-das.jpg" class="tilt" alt="">
         </div>
-        <div class="right-about">
-            <div class="about-para">
-                <p>LET ME INTRODUCE MYSELF</p>
-                <h1>About Me</h1>
-                <h2>A story of good</h2>
-                <p>"I'm a motivated professional with a Bachelor of Commerce in Computer Application
-                    from Islamiah College (Autonomous). My passion for technology and strong
-                    computer science foundation drive me to excel as a proficient programmer. I'm
-                    skilled in HTML, CSS, JavaScript, C#, and more, and I'm committed to delivering
-                    high-quality solutions in the dynamic world of programming."</p>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Dot Net Developer</h4>
+            <p>"I'm a motivated professional with a Bachelor of Commerce in Computer Application
+                from Islamiah College (Autonomous). My passion for technology and strong
+                computer science foundation drive me to excel as a proficient programmer. I'm
+                skilled in HTML, CSS, JavaScript, C#, and more, and I'm committed to delivering
+                high-quality solutions in the dynamic world of programming."</p>
+        </div>
+    </section>
+
+    <section class="timeline-container">
+        <div class="heading">
+            <h2 class="h">Cover <span class="sh">Letter</span></h2>
+        </div>
+        <section class="timeline">
+            <ul>
+                <li>
+                    <div>
+                        <time>2016</time> <span>SCHOOLING <br></span> I completed my schooling in 2018 at Anaikar
+                        Oriental (Arabic) Higher Secondary School. These formative years provided me with a strong
+                        foundation in various subjects and instilled in me a sense of discipline and cultural
+                        appreciation. This period not only enriched my academic knowledge but also nurtured my personal
+                        growth.
+                    </div>
+                </li>
+                <li>
+                    <div class="left-g">
+                        <time>2022</time><span>UNIVERCITY<br></span> Subsequently, I pursued my college education,
+                        earning a Bachelor of Commerce (B.Com) degree with a specialization in Computer Application.
+                        This academic journey culminated in 2022, equipping me with a comprehensive understanding of
+                        computer applications and technology. Throughout my college years, I embraced opportunities to
+                        develop my skills and explore my interests, setting the stage for my future endeavors.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2023</time> <span>INTERNSHIP <br></span>In 2023, I embarked on a transformative journey by
+                        joining Aspira System for an internship. This experience has been instrumental in shaping my
+                        career and skill set. During my time at Aspira System, I had the opportunity to immerse myself
+                        in various aspects of web development and programming.
+                    </div>
+                </li>
+                <li>
+                    <div class="left-g">
+                        <time>2023</time> <span>SKILLS LEARNED <br></span> I delved into technologies such as HTML, CSS,
+                        JavaScript, and Bootstrap, acquiring proficiency in front-end web development. Additionally, I
+                        honed my database management skills through working with MySQL and gained expertise in C# and
+                        MVC .NET for robust web application development.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <time>2023</time> <span>INTERNSHIP <br></span> This internship not only expanded my technical
+                        capabilities but also fostered a deep passion for web development and a commitment to delivering
+                        innovative and user-friendly solutions. It has been an invaluable experience, allowing me to
+                        translate my educational foundation into practical expertise, and I look forward to continuing
+                        to grow in the dynamic field of technology."
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </section>
+    <!-- ==============================My Skills================================ -->
+    <div class="skills-container">
+        <div class="heading">
+            <h2 class="h">My <span class="sh">Skills</span></h2>
+        </div>
+
+        <div class="skills-list-1">
+            <div class="lang">
+                <i class="devicon-html5-plain"><span class="visible">HTML</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-css3-plain"><span class="visible">CSS</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-bootstrap-plain"><span class="visible">BOOTSTRAP</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-javascript-plain"><span class="visible">JAVA SCRIPT</span></i>
+            </div>
+
+        </div>
+
+        <div class="skills-list-2">
+            <div class="lang">
+                <i class="devicon-git-plain"><span class="visible">GIT</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-mysql-plain"><span class="visible">MY SQL</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-csharp-plain"><span class="visible">C#</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-dotnetcore-plain"><span class="visible">.NET CORE</span></i>
             </div>
         </div>
+    </div>
+
+    <!-- ==========================PROJECT============================ -->
+    <div class="project-container">
+        <div class="heading">
+            <h2 class="h">My <span class="sh">Projects</span></h2>
+        </div>
+
+    </div>
 
 
+    <!-- Contact ME -->
+    <!-- -------Contact------- -->
+    <div class="contact-container">
+        <div class="heading">
+            <h2 class="h">Contact <span class="sh">Me</span></h2>
+        </div>
+
+
+
+
+
+    </div>
+
+    <!-- -------Contact------- -->
+    <!-- -------Contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Connect with me!</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 1234566789</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+                        <a href=""><i class="fa-brands fa-facebook-f" style="--i:7"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter" style="--i:8"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram" style="--i:9"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in" style="--i:10"></i></a> <br>
+                    </div>
+                    <a href="./AS-Web Devlopment.pdf" download class="c-btn d-b">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="c-btn button-click">submit</button>
+                    </form>
+                    <span class="successfully-saved"><i class="fa fa-thumbs-up"></i> Saved!</span>
+                </div>
+                <!-- <span id="msg"></span> -->
+                <span class="successfully-saved"><i class="fa fa-thumbs-up"></i> Saved!</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Muzammil made with <i class="fa-solid fa-heart"></i> by easy
+            tutorial</p>
     </div>
 
 
@@ -79,9 +243,12 @@
 
 
 
-
-
+    <!-- Swiper JS -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="/script.js"></script>
+    <script>
+
+    </script>
 </body>
+
 </html>
