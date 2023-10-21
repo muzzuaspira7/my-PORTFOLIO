@@ -4,7 +4,33 @@ const typed = new Typed('#changing-text', {
   backSpeed: 50,
   loop: true
 });
+// Nav scroll
 
+    // Function to add or remove the 'active' class based on scroll position
+    function setActiveNav() {
+      const sections = document.querySelectorAll("section"); // Replace with your section elements
+      const navLinks = document.querySelectorAll(".navbar a, .bottom-icons a i");
+
+      sections.forEach((section, index) => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+              // Highlight the corresponding nav link
+              navLinks[index].classList.add("active");
+          } else {
+              // Remove the 'active' class from nav link
+              navLinks[index].classList.remove("active");
+          }
+      });
+  }
+
+  // Listen for scroll events and call the setActiveNav function
+  window.addEventListener("scroll", setActiveNav);
+
+  // Call setActiveNav initially to highlight the active section on page load
+  setActiveNav();
+
+
+  
 // // TILT
 const cards = document.querySelectorAll('.tilt');
 for (let i = 0; i < cards.length; i++) {
