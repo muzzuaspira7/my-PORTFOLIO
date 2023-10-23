@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
@@ -25,14 +24,14 @@
                 <a href="#projects" style="--i:4">Portfolio</a>
                 <a href="#contact" style="--i:5">Contact</a>
             </div>
-
             <div class="bottom-icons">
-                <a href="#home"><i class=" active fa-solid fa-house "></i></a>
+                <a href="#home"><i class="fa-solid fa-house active"></i></a>
                 <a href="#about"><i class="fa-solid fa-user"></i></a>
                 <a href="#skills"><i class="fa-solid fa-chart-simple"></i></a>
                 <a href="#projects"><i class="fa-solid fa-layer-group"></i></a>
                 <a href="#contact"><i class="fa-solid fa-message"></i></a>
             </div>
+
         </nav>
     </header>
     <!-- ............................Hero Section............................. -->
@@ -65,8 +64,8 @@
             <img src="/img/arjun-das.jpg" class="tilt" alt="">
         </div>
         <div class="about-text">
-            <h2>About <span>Me</span></h2>
-            <h4>Dot Net Developer</h4>
+            <h2 class="last-size">About <span>Me</span></h2>
+            <h4 class="sub-heading">Dot Net Developer</h4>
             <p>"I'm a motivated professional with a Bachelor of Commerce in Computer Application
                 from Islamiah College (Autonomous). My passion for technology and strong
                 computer science foundation drive me to excel as a proficient programmer. I'm
@@ -76,9 +75,9 @@
 
         <div class="timeline-container">
             <div class="heading">
-                <h2 class="h">Cover <span class="sh">Letter</span></h2>
+                <h2 class="h last-size">Cover <span class="sh">Letter</span></h2>
             </div>
-            <div class="timeline">
+            <div class="timeline" id="timed">
                 <ul>
                     <li>
                         <div class="right-g">
@@ -140,7 +139,7 @@
     <!-- ==============================My Skills================================ -->
     <section class="skills-container" id="skills">
         <div class="heading">
-            <h2 class="h">My <span class="sh">Skills</span></h2>
+            <h2 class="h last-size">My <span class="sh">Skills</span></h2>
         </div>
 
         <div class="skills-list-1">
@@ -178,8 +177,135 @@
     <!-- ==========================PROJECT============================ -->
     <section class="project-container" id="projects">
         <div class="heading">
-            <h2 class="h">My <span class="sh">Projects</span></h2>
+            <h2 class="h last-size">My <span class="sh">Projects</span></h2>
         </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="dupe">
+                    <div class="card flipped">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/Chopsndhops.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Chops & Hops</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure aperiam enim!</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/uptown.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>UpTown MotorWorks</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure aperiam enim!</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://uptown-motorworks.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/power-gym.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Power Gym</h4>
+                                <p class="visit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure
+                                    aperiam enim!</p>
+                                <p>Visit Via</p>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://power-gym-project.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/weather.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Weather App</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure aperiam enim!</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://myweatherapk.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/amazon-prime.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Amazon Prime Clone</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure aperiam enim!</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://cloned-amazon-prime.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/validation.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Form Validation</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure aperiam enim!</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://validation-formmuzzu.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/quiz.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Quiz App</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad iure aperiam enim!</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://quizappmuzzu.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
 
     </section>
 
@@ -188,45 +314,41 @@
     <!-- -------Contact------- -->
     <section class="contact-container">
         <div class="heading">
-            <h2 class="h">Contact <span class="sh">Me</span></h2>
+            <h2 class="h last-size">Contact <span class="sh">Me</span></h2>
         </div>
-    <!-- -------Contact------- -->
-    <!-- -------Contact------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Connect with me!</h1>
-                    <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i> 1234566789</p>
-                    <div class="social-icons">
-                        <!-- <a href=""><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href=""><i class="fa-brands fa-square-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
-                        <a href=""><i class="fa-brands fa-facebook-f" style="--i:7"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter" style="--i:8"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram" style="--i:9"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin-in" style="--i:10"></i></a> <br>
+        <!-- -------Contact------- -->
+        <!-- -------Contact------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title sub-heading">Connect with me!</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> 1234566789</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook-f" style="--i:7"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter" style="--i:8"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram" style="--i:9"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in" style="--i:10"></i></a> <br>
+                        </div>
+                        <a href="./AS-Web Devlopment.pdf" download class="c-btn d-b">Download CV</a>
                     </div>
-                    <a href="./AS-Web Devlopment.pdf" download class="c-btn d-b">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email">
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="c-btn button-click">submit</button>
-                    </form>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="c-btn button-click">submit</button>
+                        </form>
+                        <span class="successfully-saved"><i class="fa fa-thumbs-up"></i> Saved!</span>
+                    </div>
+                    <!-- <span id="msg"></span> -->
                     <span class="successfully-saved"><i class="fa fa-thumbs-up"></i> Saved!</span>
-                </div>
-                <!-- <span id="msg"></span> -->
-                <span class="successfully-saved"><i class="fa fa-thumbs-up"></i> Saved!</span>
 
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <div class="copyright">
         <p>Copyright <i class="fa-regular fa-copyright"></i> Muzammil made with <i class="fa-solid fa-heart"></i> by
@@ -246,6 +368,11 @@
 
 
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
 
 
 

@@ -8,7 +8,8 @@
 body{
     font-family: 'Poppins', sans-serif;
     color: white;
-    background-color: #1f242d;
+    /* background-color: #1f242d; */
+    background-color: black;
 }
 header{
     display: flex;
@@ -18,8 +19,9 @@ header{
     max-width: 100%; 
     left: 0;
     right: 0;
-    z-index: 1;
-    background-color: #051129;
+    opacity: 1;
+    z-index: 999;
+    background: linear-gradient(271deg, #00a9bf, transparent);
 }
 .logo{
     color: #fff;
@@ -49,9 +51,18 @@ header{
 .navbar a:hover, 
 .navbar a.active{
     color: #0ef;
+  /* box-shadow: 0 0 20px #0ef; */
+  border: none!important;
 }
 .bottom-icons{
   display: none;
+  opacity: 1;
+  z-index: 999;
+  /* background: linear-gradient(271deg, #00a9bf, transparent); */
+}
+.bottom-icons a i.active {
+  color: #0ef;
+
 }
 /* ....................Hero Section..................... */
 .hero-container{
@@ -237,29 +248,6 @@ button:hover{
     }
 
     /* =================2nd page================ */
-    /* .about-content{
-        display: flex;
-        padding: 70px;
-        width: 100%;
-        justify-content: space-evenly;
-    }
-    .left-about{
-        width: 50%;
-    }
-    .left-about img{
-        height: 60vh;
-    }
-    .about-para{
-        width: 90%;
-        align-items: center;
-        margin: auto;
-
-    }
-    .right-about{
-        width: 50%;
-    } */
-
-
 .about{
     display: flex;
     align-items: center;
@@ -303,6 +291,8 @@ width: 40%;
 /* =========================HEADING TimeLine=========================== */
 .timeline-container {
     padding-top: 100px;
+    max-width: 100%;
+    
 }
 .timeline-container .heading h2{
     text-align: center;
@@ -319,6 +309,8 @@ width: 40%;
 .timeline ul {
     /* background: #456990; */
     padding: 50px 0;
+    width: auto;
+    /* overflow-x: hidden; */
   }
   .timeline  span{
       font-size: 30px;
@@ -376,7 +368,7 @@ width: 40%;
   }
   
   .timeline ul li:nth-child(even) div {
-    left: -439px;
+    right: 439px;
   }
   
   .timeline ul li:nth-child(even) div::before {
@@ -433,11 +425,7 @@ width: 40%;
     visibility: visible;
     opacity: 1;
     background: linear-gradient(271deg, #00a9bf, transparent);
-}
-.left-g, .right-g{
-  overflow-x: scroll;
-}
-  
+}  
   /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   
@@ -473,12 +461,6 @@ width: 40%;
       border-color: transparent #00a9bf transparent transparent;
     }
     }
-    
-
-
-
-  
-
   @media screen and (max-width: 550px) {
     .timeline ul li {
       margin-left: 20px;
@@ -629,12 +611,71 @@ width: 40%;
     display: block;
     opacity: 1;
   }
+
   /* =======================PROJECT============================ */
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.card .content {
+  transform-style: preserve-3d;
+  transform: rotateY(0deg); /* Set the initial state */
+  transition: transform 0.5s;
+}
+.card.flipped .content {
+  transform: rotateY(180deg); /* Apply the rotation for flipped cards */
+}
+
+
+.front,
+.back {
+    position: absolute;
+    height: 97%;
+    width: 100%;
+    background: white;
+    color: #03446A;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    backface-visibility: hidden;
+}
+
+.front img{
+  width: 100%;
+  height: 100%;
+}
+.back {
+    background: #03446A;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.back h4{
+  font-size: 30px;
+}
+.back p{
+  font-size: 17px;
+}
+.visit{
+  font-weight: 600;
+  font-size: 30px;
+}
+.back a i{
+    font-size: 30px;
+    color: #0ef;
+}
+  
   .project-container{
     padding-top: 100px;
-
   }
-
   .heading{
     display: flex;
     justify-content: center;
@@ -696,20 +737,6 @@ width: 40%;
     
 
 }
-
-/* .social-icons a{
-  text-decoration: none;  
-  font-size: 30px;
-  margin-right: 15px;
-  color:white;
-  display: inline-block;
-  transition: transform 0.5s;
-} */
-
-/* .social-icons a:hover{
-    color: #0ef;
-    transform: translateY(-5px);
-} */
 
 .social-icons i{
   position: relative;
@@ -807,16 +834,34 @@ transition:background 0.5s;
     display: block;
   }
 }
+.swiper {
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 70vh;
+}
+
+#dupe {
+  background-position: center;
+  background-size: cover;
+  width: 280px;
+  height: 320px;
+  margin: 0px 20px;
+  /* position: absolute; */
+  }
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%; */
+  height: 57vh;
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0002, #0004);
+
+}
+
 
 
 
 /* ======================Responsive==================== */
-@media (max-width: 300px) {
-  .hero-img img {
-      width: 40%;
-      padding: 0px!important;
-}
-}
 @media (max-width: 550px) {
   .hero-img img {
       width: 60%;
@@ -847,6 +892,7 @@ transition:background 0.5s;
       justify-content: center;
       align-items: center;
       padding: 15px;
+      z-index: 999;
       position: fixed;
       bottom: 0;
       width: 100%;
@@ -884,8 +930,8 @@ transition:background 0.5s;
       position: fixed;
       left: 0;
       right: 0;
-      z-index: 1;
       background-color: #051129;
+      
   }
 }
 
@@ -970,6 +1016,12 @@ transition:background 0.5s;
       flex-direction: column;
   }
 }
+@media screen  and (max-width:600px) {
+  .header{
+        background-color: #051129;
+  }
+  
+}
 
 
 
@@ -998,11 +1050,16 @@ transition:background 0.5s;
   display: none;
 }
 }
+@media screen and (max-width:450px){
+.last-size{
+  font-size: 40px!important;
+}
+.sub-heading{
+  font-size: 30px;
+}
+}
 /* contact us */
 @media only screen and (max-width:600px){
-  #header{
-      background-image: url(images/phone-background.png);
-  }
   .header-text {
       margin-top: 100%;
       font-size: 16px;
