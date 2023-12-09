@@ -84,20 +84,35 @@ setActiveNav();
   window.addEventListener("scroll", callbackFunc);
 })();
 
-
+// Contacttttt
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwvlmFmTZeDsL3mqALhcx51fnu_p6lzzC19uurAjn6hvcNdhY_BSzn4DlE3lKmQYFY_iA/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg")
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      msg.style.display = "block"
+        setTimeout(function(){
+            msg.style.display = "none"
+        },4000)
+        form.reset()
+    })
+    .catch(error => console.error('Error!', error.message))
+})
 
 // Contact
 // document.getElementsByClassName('successfully-saved')
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwvlmFmTZeDsL3mqALhcx51fnu_p6lzzC19uurAjn6hvcNdhY_BSzn4DlE3lKmQYFY_iA/exec'
-const form = document.forms['submit-to-google-sheet']
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbwvlmFmTZeDsL3mqALhcx51fnu_p6lzzC19uurAjn6hvcNdhY_BSzn4DlE3lKmQYFY_iA/exec'
+// const form = document.forms['submit-to-google-sheet']
 
-form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-        .then(response =>
-            console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-})
+// form.addEventListener('submit', e => {
+//     e.preventDefault()
+//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+//         .then(response =>
+//             console.log('Success!', response))
+//         .catch(error => console.error('Error!', error.message))
+// })
 
 
 // Swipper
