@@ -291,7 +291,8 @@ width: 40%;
 /* =========================HEADING TimeLine=========================== */
 .timeline-container {
     padding-top: 100px;
-    max-width: 100%;
+    max-width: 400px;
+    /* overflow: hidden; */
     
 }
 .timeline-container .heading h2{
@@ -563,24 +564,26 @@ width: 40%;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    transition: all .7s  ease ;
   }
   .skills-container i span{
     font-size: 30px;
     padding-top: 11px;
     /* display: none; */
+    transition: all .7s ease;
   }
+  
   .skills-container .lang{
       height: 40vh;
       margin: 10px;
       width: 220px;
       border: 2px solid#1f2b44;
       border-radius: 10px;
-      transition: all 0.5s ease;
+      transition: all .7s ease;
+      cursor: pointer;
     }
     .skills-container .lang:hover{
-       background: linear-gradient(176deg, #00a9bf, transparent);
-       transition: all 1s;
-   
+       background: linear-gradient(176deg, #00a9bf, transparent);   
      }
      
   .skills-list-1 {
@@ -593,6 +596,7 @@ width: 40%;
     margin: 0 0 2% 0;
   }
   
+  
   .skills-list-2 {
     width: 100%;
     min-height: 35vh;
@@ -604,12 +608,14 @@ width: 40%;
   
   .lang span {
     display: none;
-    transition: all .5s;
-    transition: opacity 0.5s;
+    transition: all 1s ease;
+     opacity: .7;    
+
   }
     .lang:hover span {
     display: block;
     opacity: 1;
+    
   }
 
   /* =======================PROJECT============================ */

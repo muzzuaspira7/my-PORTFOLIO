@@ -1,5 +1,5 @@
 const typed = new Typed('#changing-text', {
-  strings: ['Web Developer', 'Web Designer', '.Net Developer', 'Web App Developer'],
+  strings: ['Flutter Developer', 'Web Developer', 'Web Designer', 'Web App Developer', 'FLutter UI designer'],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true
@@ -100,19 +100,6 @@ form.addEventListener('submit', e => {
     })
     .catch(error => console.error('Error!', error.message))
 })
-
-// Contact
-// document.getElementsByClassName('successfully-saved')
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbwvlmFmTZeDsL3mqALhcx51fnu_p6lzzC19uurAjn6hvcNdhY_BSzn4DlE3lKmQYFY_iA/exec'
-// const form = document.forms['submit-to-google-sheet']
-
-// form.addEventListener('submit', e => {
-//     e.preventDefault()
-//     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-//         .then(response =>
-//             console.log('Success!', response))
-//         .catch(error => console.error('Error!', error.message))
-// })
 
 
 // Swipper
