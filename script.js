@@ -1,5 +1,5 @@
 const typed = new Typed('#changing-text', {
-  strings: ['Flutter Developer', 'Frontend Developer','Mobile App Developer', 'Web Designer', 'Web Developer'],
+  strings: ['Flutter Developer', 'Frontend Developer', 'Mobile App Developer', 'Web Designer', 'Web Developer'],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true
@@ -7,15 +7,15 @@ const typed = new Typed('#changing-text', {
 
 // Projects
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const cards = document.querySelectorAll(".card");
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".card");
 
-    cards.forEach((card) => {
-      card.addEventListener("click", function () {
-        card.classList.toggle("flipped");
-      });
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      card.classList.toggle("flipped");
     });
   });
+});
 
 
 
@@ -50,14 +50,14 @@ setActiveNav();
   "use strict";
 
   // define variables
-  
+
   var items = document.querySelectorAll(".timeline li");
 
   // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+ 
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
-    
+
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&
@@ -87,13 +87,13 @@ const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById("msg")
 form.addEventListener('submit', e => {
   e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
     .then(response => {
       msg.style.display = "block"
-        setTimeout(function(){
-            msg.style.display = "none"
-        },4000)
-        form.reset()
+      setTimeout(function () {
+        msg.style.display = "none"
+      }, 4000)
+      form.reset()
     })
     .catch(error => console.error('Error!', error.message))
 })
@@ -106,22 +106,22 @@ var swiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
-      rotate: 15,
-      stretch: 0,
-      depth: 300,
-      modifier: 1,
-      slideShadows: true,
+    rotate: 15,
+    stretch: 0,
+    depth: 300,
+    modifier: 1,
+    slideShadows: true,
   },
   loop: true,
 });
 
 let appProjects = document.querySelector('.appProjects')
 // App
-async function fetchAppData(){
+async function fetchAppData() {
   let response = await fetch('projects.json')
   let data = await response.json();
   console.log(data)
-  data.app_projects.forEach(value=>{
+  data.app_projects.forEach(value => {
 
     console.log(value.project_name)
     // created card
@@ -164,36 +164,36 @@ async function fetchAppData(){
     let titlee = document.createElement('span')
     titlee.classList.add('title')
     descriptionCard.appendChild(titlee)
-        // created row
-        let row = document.createElement('div')
-        row.classList.add('row')
-        titlee.appendChild(row)
-         // created gitimg
-         let gitimgDiv = document.createElement('div')
-         gitimgDiv.classList.add('gitimg')
-         row.appendChild(gitimgDiv)
-          // created ancher tag
-          let aTag = document.createElement('a')
-          aTag.href= value.links
-          aTag.target = '_blank'
-          gitimgDiv.appendChild(aTag)
-                    // created githubImage
-                    let constGitImage = document.createElement('img')
-                    constGitImage.src = "/img/github.png"
-                    aTag.appendChild(constGitImage)
-                    
-
-
-
-          
-
-        
+    // created row
+    let row = document.createElement('div')
+    row.classList.add('row')
+    titlee.appendChild(row)
+    // created gitimg
+    let gitimgDiv = document.createElement('div')
+    gitimgDiv.classList.add('gitimg')
+    row.appendChild(gitimgDiv)
+    // created ancher tag
+    let aTag = document.createElement('a')
+    aTag.href = value.links
+    aTag.target = '_blank'
+    gitimgDiv.appendChild(aTag)
+    // created githubImage
+    let constGitImage = document.createElement('img')
+    constGitImage.src = "/img/github.png"
+    aTag.appendChild(constGitImage)
 
 
 
 
 
-    
+
+
+
+
+
+
+
+
 
 
 
@@ -209,11 +209,11 @@ fetchAppData()
 
 let webProjects = document.querySelector('.webProjects')
 
-async function fetchWebData(){
+async function fetchWebData() {
   let response = await fetch('projects.json')
   let data = await response.json();
   console.log(data)
-  data.web_projects.forEach(value=>{
+  data.web_projects.forEach(value => {
 
     console.log(value.project_name)
     // created card
@@ -256,45 +256,37 @@ async function fetchWebData(){
     let titlee = document.createElement('span')
     titlee.classList.add('title')
     descriptionCard.appendChild(titlee)
-        // created row
-        let row = document.createElement('div')
-        row.classList.add('row')
-        titlee.appendChild(row)
-         // created gitimg
-         let gitimgDiv = document.createElement('div')
-         gitimgDiv.classList.add('gitimg')
-         row.appendChild(gitimgDiv)
-          // created ancher tag
-          let aTag = document.createElement('a')
-          aTag.href= value.links
-          aTag.target = '_blank'
-          gitimgDiv.appendChild(aTag)
-                    // created githubImage
-                    let constGitImage = document.createElement('img')
-                    constGitImage.src = "/img/github.png"
-                    aTag.appendChild(constGitImage)
+    // created row
+    let row = document.createElement('div')
+    row.classList.add('row')
+    titlee.appendChild(row)
+    // created gitimg
+    let gitimgDiv = document.createElement('div')
+    gitimgDiv.classList.add('gitimg')
+    row.appendChild(gitimgDiv)
+    // created ancher tag
+    let aTag = document.createElement('a')
+    aTag.href = value.links
+    aTag.target = '_blank'
+    gitimgDiv.appendChild(aTag)
+    // created githubImage
+    let constGitImage = document.createElement('img')
+    constGitImage.src = "/img/github.png"
+    aTag.appendChild(constGitImage)
+    // for the netlify link 
 
-
-
-
-
-
-
-
-
-
-                    let GoLive = document.createElement('div')
-                    GoLive.classList.add('gitimg')
-                    row.appendChild(GoLive)
-                     // created ancher tag
-                     let GoLiveTag = document.createElement('a')
-                     GoLiveTag.href= value.live
-                     GoLiveTag.target = '_blank'
-                     GoLive.appendChild(GoLiveTag)
-                               // created githubImage
-                               let ConstNetlifyImg = document.createElement('img')
-                               ConstNetlifyImg.src = "/img/golive.png"
-                               GoLiveTag.appendChild(ConstNetlifyImg)
+    let GoLive = document.createElement('div')
+    GoLive.classList.add('gitimg')
+    row.appendChild(GoLive)
+    // created ancher tag
+    let GoLiveTag = document.createElement('a')
+    GoLiveTag.href = value.live
+    GoLiveTag.target = '_blank'
+    GoLive.appendChild(GoLiveTag)
+    // created githubImage
+    let ConstNetlifyImg = document.createElement('img')
+    ConstNetlifyImg.src = "/img/golive.png"
+    GoLiveTag.appendChild(ConstNetlifyImg)
 
   })
 
@@ -305,14 +297,14 @@ fetchWebData()
 let view_more = document.querySelector('.project_footer p')
 let show = false;
 let mainforweb = document.querySelector('.hidden')
-view_more.addEventListener('click', function(){
-  show =!show
+view_more.addEventListener('click', function () {
+  show = !show
   console.log(show)
   if (show) {
     mainforweb.style.display = "block"
     view_more.innerHTML = "View Less"
-    
-  }else{
+
+  } else {
     mainforweb.style.display = "none"
     view_more.innerHTML = "View More"
   }
