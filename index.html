@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <div class="top">
+                <a href="#home" class="active" style="--i:1">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                <a href="#skills" style="--i:3">Skills</a>
+                <a href="#projects" style="--i:4">Portfolio</a>
+                <a href="#contact" style="--i:5">Contact</a>
+            </div>
+            <div class="bottom-icons">
+                <a href="#home"><i class="fa-solid fa-house active"></i></a>
+                <a href="#about"><i class="fa-solid fa-user"></i></a>
+                <a href="#skills"><i class="fa-solid fa-chart-simple"></i></a>
+                <a href="#projects"><i class="fa-solid fa-layer-group"></i></a>
+                <a href="#contact"><i class="fa-solid fa-message"></i></a>
+            </div>
+
+        </nav>
+    </header>
+    <!-- ............................Hero Section............................. -->
+    <section id="home">
+        <div class="hero-container">
+            <div class="info-side">
+                <h3 class="part-1">Hello, It's Me</h3>
+                <h1>Muzammil</h1>
+                <h3 class="part-2">And I'm a <span id="changing-text"></span></h3>
+                <p></p>
+
+                <!-- ...................Social Media Icons...................... -->
+                <a href=""><i class="fa-brands fa-facebook-f" style="--i:7"></i></a>
+                <a href=""><i class="fa-brands fa-twitter" style="--i:8"></i></a>
+                <a href=""><i class="fa-brands fa-instagram" style="--i:9"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in" style="--i:10"></i></a> <br>
+                <button class="btn"><a href="assets/MuzammilResume.pdf"
+                        download="MuzammilResume.pdf">Download</a></button>
+            </div>
+            <div class="hero-img">
+                <img src="/img/muzzu.jpg" class="tilt" alt="My Pic">
+            </div>
+        </div>
+    </section>
+    <!-- =================Page-2================== -->
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/img/arjun-das.jpg" class="tilt" alt="">
+        </div>
+        <div class="about-text">
+            <h2 class="last-size">About <span>Me</span></h2>
+            <h4 class="sub-heading">Flutter Developer</h4>
+            <p>I have a Bachelor's in Commerce with a focus on Computer Application. Proficient in Flutter, Dart, and
+                Firebase for mobile apps, alongside JavaScript, CSS, HTML, and Bootstrap for web development. With a
+                commitment to excellence, I've delivered high-quality solutions across both domains, demonstrating
+                success through various projects.</p>
+        </div>
+
+        <div class="timeline-container">
+            <div class="heading">
+                <h2 class="h last-size">Cover <span class="sh">Letter</span></h2>
+            </div>
+            <div class="timeline" id="timed">
+                <ul>
+                    <li>
+                        <div class="right-g">
+                            <time>2016</time> <span>SCHOOLING <br></span> I completed my schooling in 2018 at Anaikar
+                            Oriental (Arabic) Higher Secondary School. These formative years provided me with a strong
+                            foundation in various subjects and instilled in me a sense of discipline and cultural
+                            appreciation. This period not only enriched my academic knowledge but also nurtured my
+                            personal
+                            growth.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left-g">
+                            <time>2022</time><span>UNIVERCITY<br></span> Subsequently, I pursued my college education,
+                            earning a Bachelor of Commerce (B.Com) degree with a specialization in Computer Application.
+                            This academic journey culminated in 2022, equipping me with a comprehensive understanding of
+                            computer applications and technology. Throughout my college years, I embraced opportunities
+                            to
+                            develop my skills and explore my interests, setting the stage for my future endeavors.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-g">
+                            <time>2023</time> <span>INTERNSHIP <br></span>In 2023, I embarked on a transformative
+                            journey by
+                            joining Aspira System for an internship. This experience has been instrumental in shaping my
+                            career and skill set. During my time at Aspira System, I had the opportunity to immerse
+                            myself
+                            in various aspects of web development and programming.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left-g">
+                            <time>2023</time> <span>SKILLS LEARNED <br></span> I delved into technologies such as HTML,
+                            CSS,
+                            JavaScript, and Bootstrap, acquiring proficiency in front-end web development. Additionally,
+                            I
+                            honed my database management skills through working with MySQL and gained expertise in C#
+                            and
+                            MVC .NET for robust web application development.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="right-g">
+                            <time>2023</time> <span>INTERNSHIP <br></span> This internship not only expanded my
+                            technical
+                            capabilities but also fostered a deep passion for web development and a commitment to
+                            delivering
+                            innovative and user-friendly solutions. It has been an invaluable experience, allowing me to
+                            translate my educational foundation into practical expertise, and I look forward to
+                            continuing
+                            to grow in the dynamic field of technology."
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ==============================My Skills================================ -->
+    <section class="skills-container" id="skills">
+        <div class="heading">
+            <h2 class="h last-size">My <span class="sh">Skills</span></h2>
+        </div>
+
+        <div class="skills-list-1">
+            <div class="lang">
+                <i class="devicon-flutter-plain"><span class="visible">Flutter</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-dart-plain"><span class="visible">Dart</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-firebase-plain"><span class="visible">Firebase</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-mysql-plain"><span class="visible">My Sql</span></i>
+
+            </div>
+
+        </div>
+
+        <div class="skills-list-2">
+            <div class="lang">
+                <i class="devicon-javascript-plain"><span class="visible">Javascript</span></i>
+
+            </div>
+            <div class="lang">
+                <i class="devicon-bootstrap-plain"><span class="visible">Bootstrap</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-css3-plain"><span class="visible">Css3</span></i>
+            </div>
+            <div class="lang">
+                <i class="devicon-html5-plain"><span class="visible">Html5</span></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================PROJECT============================ -->
+    <section class="project-container" id="projects">
+        <div class="heading">
+            <h2 class="h last-size">My <span class="sh">Projects</span></h2>
+        </div>
+        <!-- Swiper -->
+        <!-- <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" id="dupe">
+                    <div class="card flipped">
+                        <div class="content">
+                            <div class="front">
+                    
+                                <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Chops & Hops</h4>
+                                <p>This is a restaurant project, using html, css, javascript</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://github.com/muzzuaspira7/Restaurant"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://chops-and-hops.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                    
+                                <img src="https://images.unsplash.com/photo-1542282088-fe8426682b8f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FyfGVufDB8fDB8fHww" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>UpTown MotorWorks</h4>
+                                <p>Here I have created a motor workshop using html, css, bootstrap.</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://github.com/muzzuaspira7/bootstrap-project"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://uptown-motorworks.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                    
+                                <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3ltfGVufDB8fDB8fHww" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Power Gym</h4>
+                                <p class="visit">This is my 2nd website using only html, css.</p>
+                                <p>Visit Via</p>
+                                <a href="https://github.com/muzzuaspira7/GYM-web"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://power-gym-project.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+            
+                                <img src="https://images.unsplash.com/photo-1503327431567-3ab5e6e79140?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHdlYXRoZXIlMjBhcHB8ZW58MHx8MHx8fDA%3D" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Weather App</h4>
+                                <p>A weather app using Html, Css, javascript API.</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://github.com/muzzuaspira7/Weather-App"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://myweatherapk.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/amazon-prime.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Amazon Prime Clone</h4>
+                                <p>My first project using Html, Css.</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://github.com/muzzuaspira7/AmzonPrimeClone"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://cloned-amazon-prime.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/validation.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Form Validation</h4>
+                                <p>This is a form validation using html,css, javascript</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://github.com/muzzuaspira7/alert"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://validation-formmuzzu.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide" id="dupe">
+                    <div class="card">
+                        <div class="content">
+                            <div class="front">
+                                <img src="/img/quiz.png" alt="">
+                            </div>
+                            <div class="back">
+                                <h4>Quiz App</h4>
+                                <p>Its a Quiz app using html, css, javascript</p>
+                                <h4 class="visit">Visit Via</h4>
+                                <a href="https://github.com/muzzuaspira7/Quiz-Project"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://quizappmuzzu.netlify.app"><i class="fa-solid fa-globe"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div> -->
+        <div class="projects">
+
+            <div class="appProjects ">
+
+            </div>
+
+
+            <div class="hidden">
+                <div class="webProjects">
+
+                </div>
+            </div>
+            
+
+            <div class="project_footer">
+                <p>View More</p>
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+    <!-- Contact ME -->
+    <!-- -------Contact------- -->
+    <section class="contact-container">
+        <div class="heading">
+            <h2 class="h last-size">Contact <span class="sh">Me</span></h2>
+        </div>
+        <!-- -------Contact------- -->
+        <!-- -------Contact------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title sub-heading">Connect with me!</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i> mohammedmuzzu4@gmail.com</p>
+                        <p><i class="fas fa-phone-square-alt"></i> 9360777674</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook-f" style="--i:7"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter" style="--i:8"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram" style="--i:9"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in" style="--i:10"></i></a> <br>
+                        </div>
+                        <a href="./AS-Web Devlopment.pdf" download class="c-btn d-b">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="c-btn button-click">submit</button>
+                        </form>
+                        <span class="msg" id="msg"><i class="fa fa-thumbs-up"></i> Saved!</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Muzammil made with <i class="fa-solid fa-heart"></i>
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <!-- Initialize Swiper -->
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
