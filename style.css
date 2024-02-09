@@ -113,6 +113,7 @@ header{
     opacity: 0;
     animation-delay: 1s;
     padding: 15px;
+    border-radius: 30px;
 }
 .hero-container i{
     position: relative;
