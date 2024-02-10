@@ -92,7 +92,7 @@ form.addEventListener('submit', e => {
       msg.style.display = "block"
       setTimeout(function () {
         msg.style.display = "none"
-      }, 4000)
+      }, 3000)
       form.reset()
     })
     .catch(error => console.error('Error!', error.message))
